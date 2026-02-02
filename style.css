@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0b0b0f;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: black;
+    border-bottom: 2px solid crimson;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: crimson;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: crimson;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle, #1a1a2e, #0b0b0f);
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: crimson;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.hero button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background: crimson;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: white;
+    color: black;
+}
+
+/* NEWS */
+.news {
+    padding: 60px 80px;
+}
+
+.news h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: crimson;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid crimson;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    border-top: 2px solid crimson;
+    margin-top: 50px;
+}
+
+
+/* ANNOUNCEMENTS */
+.announcement {
+    background: #111;
+    border-left: 5px solid crimson;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.announcement:hover {
+    transform: scale(1.02);
+}
+
+.announcement h3 {
+    color: crimson;
+    margin-bottom: 5px;
+}
+
+.announcement span {
+    font-size: 12px;
+    color: gray;
+}
+
+.announcement p {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 25px;
+    background: crimson;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* FORUM */
+.forum {
+    padding: 60px 80px;
+}
+
+.forum h2 {
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+.forum-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.forum-box input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: white;
+    border: 1px solid crimson;
+}
+
+.forum-box button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: crimson;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.forum-box button:hover {
+    background: white;
+    color: black;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    background: #111;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 4px solid crimson;
+}
+
+.message span {
+    color: crimson;
+    font-weight: bold;
+}
+
