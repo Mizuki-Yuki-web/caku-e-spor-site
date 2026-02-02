@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>ÇAKÜ E-SPOR | Chat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">⚡ ÇAKÜ E-SPOR</div>
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="news.html">Haberler</a>
+        <a href="announcements.html">Duyurular</a>
+        <a href="chat.html">Sohbet</a>
+        <a href="about.html">Hakkımızda</a>
+    </nav>
+</header>
+
+<section class="forum">
+    <h2>💬 Canlı Sohbet</h2>
+
+    <div class="forum-box">
+        <input type="text" id="username" placeholder="Kullanıcı adı">
+        <input type="text" id="message" placeholder="Mesaj yaz...">
+        <button onclick="sendMessage()">Gönder</button>
+    </div>
+
+    <div id="messages" class="messages"></div>
+</section>
+
+<footer>
+    <p>© 2026 ÇAKÜ E-SPOR</p>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>
